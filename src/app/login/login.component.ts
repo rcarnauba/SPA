@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         },
         err => {
           this._dataReturn = "";
-          this._erro = "Credenciais inválidas";
+          this._erro = "Favor, verifique a conexão com a API: " + err;
         }
     ); 
   }

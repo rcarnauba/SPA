@@ -16,14 +16,15 @@ export class DataService {
   private produtos = new BehaviorSubject<any>(['Item1','Item2','Item3']);
   produto = this.produtos.asObservable();
   _data: String = null;
-  handleError: any;
   constructor(private http : Http) { }
 
   listarProdutos(token)
   {
     let headers = new Headers({ 'Content-Type': 'application/json','Authorization':token });
     let options = new RequestOptions({ headers: headers });
-    return this.http.get(this.apiProdutoUrl,options).map(res => res.json());
+    return this.http.get(this.apiProdutoUrl,options)
+    .map(res => res.json())
+    .catch(this.handleError);
   }
 
   login(email, senha)
@@ -31,7 +32,15 @@ export class DataService {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
     const body = JSON.stringify({email: email,senha:senha}); 
-    return this.http.post(this.apiAutenticacaoUrl, body,options).map(res => res.json());
+    return this.http.post(this.apiAutenticacaoUrl, body,options).map(res => res.json())
+    .map(res => res.json())
+    .catch(this.handleError);
   }
+
+  public handleError(error: Response) {
+    console.error(error);
+    return Observable.throw(error.json().error || 'Server error');
+  }
+
 }
 

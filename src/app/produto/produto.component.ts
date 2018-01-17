@@ -26,7 +26,8 @@ export class ProdutoComponent implements OnInit {
             this._erro = "";},
             err => {
               this._erro = err;
-              this.router.navigate(['login']);
+              
+             // this.router.navigate(['login']);
             }
         );
       }
