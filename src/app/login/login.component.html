@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="col">
+    <p>Digite suas credenciais.</p>    
+  </div>
+</div>
+
+<div class="container">
+    <div class="col">
+        <form>
+          <input type="text" class="text" id="email" required [(ngModel)]="email" name="email" placeholder="Digite seu email...">
+          <input type="password" class="text" id="senha" required [(ngModel)]="senha" name="senha" placeholder="Digite sua senha...">
+          <input type="submit" class="button" name="btnLogin" (click)="login(usuario)">
+        </form>
+      </div>
+
+      {{_dataReturn}}
+      {{_erro}}
+</div>
