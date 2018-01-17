@@ -24,4 +24,3 @@ ng serve
 7 - ) Caso o browser não abra automaticamente, abra o seu navegador de preferencia e digite o endereço abaixo:
 
 http://localhost:4200/
-
