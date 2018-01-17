@@ -1,27 +1,27 @@
 # FCamaraSPA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+Este projeto foi gerado com Angular CLI (https://github.com/angular/angular-cli) version 1.6.3.
 
-## Development server
+Os pre-requisitos para executar esse projeto são o NodeJS e npm
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1 -) Faça o download do código fonte que está em  https://github.com/rcarnauba/SPA.git
+2 -) Após extrair os arquivos, abra um prompt de comando e navegue até a pasta onde se encontra o código fonte.
+3 - ) Verifique se você tem instalado o nodejs e o npm conforme os comandos abaixo:
 
-## Code scaffolding
+nodejs -v
+npm -v 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4 - ) Execute o comando npm install. Nesse momento serão instaladas todas as depencendias do projeto.
 
-## Build
+5 - ) Instale do Angular CLI executando o comando abaixo:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+npm install -g @angular/cli
 
-## Running unit tests
+6 - ) Ainda dentro da pasta do projeto, execute o comando abaixo para abrir o projeto no navegador usando o servidor de desenvolvimento
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng serve
 
-## Running end-to-end tests
+7 - ) Caso o browser não abra automaticamente, abra o seu navegador de preferencia e digite o endereço abaixo:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+http://localhost:4200/
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
