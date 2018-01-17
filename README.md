@@ -11,11 +11,12 @@ Os pre-requisitos para executar esse projeto são o NodeJS e npm
 3 - ) Verifique se você tem instalado o nodejs e o npm conforme os comandos abaixo:
 
 nodejs -v
+
 npm -v 
 
-4 - ) Execute o comando npm install. Nesse momento serão instaladas todas as depencendias do projeto.
+4 - ) Execute o comando npm install. Nesse momento serão instaladas todas as depencendias do projeto, pode demorar um pouco.
 
-5 - ) Instale do Angular CLI executando o comando abaixo:
+5 - ) Instale o Angular CLI executando o comando abaixo:
 
 npm install -g @angular/cli
 
